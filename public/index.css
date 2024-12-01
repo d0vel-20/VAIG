@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg-gradient {
+  background: linear-gradient(135deg, #C5B8E2 30%, #E6D1F1 70%, #ffffff 100%);
+} 
+ 
+ 
+ /* Custom styling */
+ .menu-btn {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .menu-btn {
+      display: block;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+  }
+
+  /* Hide close (times) icon by default */
+  .close-menu {
+    display: none;
+  }
+
+  /* Show times icon when active */
+  .menu-btn.open .close-menu {
+    display: inline;
+  }
+
+  /* Hide menu (bars) icon when active */
+  .menu-btn.open .open-menu {
+    display: none;
+  }
+
+  .hero{
+    background-image: url("https://res.cloudinary.com/da1sagzgc/image/upload/v1728224162/dua_furtherafrica_dinholima008-e1609815595952_yt8gs4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+  .herol{
+    background-image: url('https://res.cloudinary.com/da1sagzgc/image/upload/v1728223250/adanta-at-skegness_zbnan5.jpg');
+  }
+
+
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-slide {
+    animation: slide 20s linear infinite;
+  }
+
+
+  /* Base product card styling */
+.product-card {
+  min-width: 19%; /* Ensures 5 cards on large screens */
+}
+
+@media (max-width: 1024px) {
+  .product-card {
+    min-width: 24%; /* 4 cards on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    min-width: 32%; /* 3 cards on small screens */
+  }
+}
+
+@media (max-width: 640px) {
+  .product-card {
+    min-width: 48%; /* 2 cards on very small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    min-width: 100%; /* 1 card on extra small screens */
+  }
+}
+      
+        .hover-zoom:hover {
+          transform: scale(1.05);
+          transition: transform 0.5s ease;}
+      
+
+       /* Custom styles for the hero section */
+       .hero-bg {
+        background-image: url('https://res.cloudinary.com/da1sagzgc/image/upload/v1728222334/s01-update2_eupxbg.jpg');
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: opacity(20px);
+    }
+    /* Hide the mobile menu by default */
+    .mobile-menu {
+        display: none;
+    }
+
+
+
+/* CART PAGE STYLING */
+.cart-page{
+  margin: 80px auto;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+    
+
+    
+
+    
+
+
+    
+
+
+
