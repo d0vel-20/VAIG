@@ -1,7 +1,7 @@
 <?php 
   $pageTitle = "Cart";
-  include '../includes/config.php';
-  include '../includes/header.php';
+  include './includes/config.php';
+  include './includes/header.php';
 
 ?>
 
@@ -32,7 +32,7 @@
                 <div class="text-md kanit-regular text-gray-800">
                     Total: <p class="text-purple-700 kanit-light" id="totalele"></p>
                 </div>
-                    <a href="../public/checkout.php">
+                    <a href="./checkout.php">
                     <button 
                     id="proceedToCheckout"
                     class="bg-purple-700 w-full  md:w-[300px] hover:bg-purple-800 text-white px-10 py-2 mt-4 lg:mt-0 rounded-md kanit-light focus:outline-none focus:ring-4 focus:ring-purple-500 text-md">
@@ -53,12 +53,12 @@
         return;
     }
     // Redirect to the checkout page
-    window.location.href = "../public/checkout.php";
+    window.location.href = "./checkout.php";
 });
     </script>
 
 
 
 
-<?php include '../includes/footer.php'; ?>
+<?php include './includes/footer.php'; ?>
 

@@ -1,7 +1,7 @@
 <?php 
 $pageTitle = "Shop";
-include '../includes/config.php'; // Include DB connection
-include '../includes/header.php';
+include './includes/config.php'; // Include DB connection
+include './includes/header.php';
 
 // Set default values for filters and pagination
 $category = isset($_GET['category']) ? $_GET['category'] : '';
@@ -131,9 +131,9 @@ $totalPages = ceil($totalProducts / $itemsPerPage);
         <div class="grid gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
             <?php if (!empty($products)): ?>
                 <?php foreach ($products as $product): ?>
-                    <a href="../public/product_id.php?id=<?= $product['id'] ?>" class="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <a href="./product_id.php?id=<?= $product['id'] ?>" class="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
                         <div class="relative">
-                            <img src="<?= '../uploads/' . $product['image'] ?>" alt="<?= $product['name'] ?>" class="w-full h-40 object-cover">
+                            <img src="<?= './uploads/' . $product['image'] ?>" alt="<?= $product['name'] ?>" class="w-full h-40 object-cover">
                         </div>
                         <div class="p-2">
                             <p class="text-gray-800 text-[12px] kanit-light"><?= $product['name'] ?></p>
@@ -161,4 +161,4 @@ $totalPages = ceil($totalProducts / $itemsPerPage);
     </section>
 </main>
 
-<?php include '../includes/footer.php'; ?>
+<?php include './includes/footer.php'; ?>

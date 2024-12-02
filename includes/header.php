@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VAIG | <?php echo isset($pageTitle) ? $pageTitle : "Default"; ?></title>
-    <link rel="stylesheet" href="../public/index.css">
-    <link rel="stylesheet" href="../public/output.css">
-    <link rel="stylesheet" href="../public/input.css">
+    <link rel="stylesheet" href="../index.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -218,7 +216,7 @@
                 <!-- Logo -->
              <div class="kanit-regular text-lg">VAIG</div>
              <!-- searchbar -->
-             <form action="../public/product.php" method="get" class="hidden md:flex items-center relative">
+             <form action="./product.php" method="get" class="hidden md:flex items-center relative">
     <input 
         type="text" 
         name="query" 
@@ -235,17 +233,17 @@
                 <div class="flex items-center justify-center gap-4">
                      <!-- links -->
                <ul class="lg:flex items-center justify-center gap-4 hidden">
-                <li><a href="../public/index.php" class="kanit-light text-sm">Home</a></li>
-                <li><a href="../public/about.php" class="kanit-light text-sm">About</a></li>
-                <li><a href="../public/product.php" class="kanit-light text-sm">Shop</a></li>
-                <li><a href="../public/blog.php" class="kanit-light text-sm">Blog</a></li>
-                <li><a href="../public/contact.php" class="kanit-light text-sm">Contact</a></li>
+                <li><a href="./index.php" class="kanit-light text-sm">Home</a></li>
+                <li><a href="./about.php" class="kanit-light text-sm">About</a></li>
+                <li><a href="./product.php" class="kanit-light text-sm">Shop</a></li>
+                <li><a href="./blog.php" class="kanit-light text-sm">Blog</a></li>
+                <li><a href="./contact.php" class="kanit-light text-sm">Contact</a></li>
                </ul>
                <!-- Auth -->
                 <div class="flex items-center justify-center gap-4">
                     <!-- <a href="../public/login.php" class="flex hover:text-white text-white w-[90px] h-[50px] rounded-[40px] items-center justify-center text-sm bg-purple-600 kanit-regular ext-md">Log In</a> -->
-                    <a href="../public/cart.php" class="relative text-lg bump text-black">
-                <img src="../public/Media/cart.png" class="h-6 w-6" alt="">
+                    <a href="./cart.php" class="relative text-lg bump text-black">
+                <img src="./Media/cart.png" class="h-6 w-6" alt="">
                 <!-- Badge with cart item count -->
                 <span id="cartBadge"  class="absolute bottom-4 left-4 w-5 h-5 text-xs font-bold text-white bg-red-500  rounded-full flex items-center justify-center">0</span>
               </a>
@@ -254,7 +252,7 @@
         </div>
 
         <!-- searchbar -->
-        <form action="../public/product.php" method="get" class="flex md:hidden items-center relative">
+        <form action="./product.php" method="get" class="flex md:hidden items-center relative">
     <input 
         type="text" 
         name="query" 
@@ -282,19 +280,19 @@
         <div class="flex flex-col items-center justify-center pt-8">
             <ul class="w-full text-sm">
                 <li class="py-4 border-b border-gray-500 w-full text-center hover:bg-purple-600 hover:text-gray-200 transition">
-                    <a href="../public/index.php" class="block w-full">Home</a>
+                    <a href="./index.php" class="block w-full">Home</a>
                 </li>
                 <li class="py-4 border-b border-gray-500 w-full text-center hover:bg-purple-600 hover:text-gray-200 transition">
-                    <a href="../public/about.php" class="block w-full">About</a>
+                    <a href="./about.php" class="block w-full">About</a>
                 </li>
                 <li class="py-4 border-b border-gray-500 w-full text-center hover:bg-purple-600 hover:text-gray-200 transition">
-                    <a href="../public/product.php" class="block w-full">Shop</a>
+                    <a href="./product.php" class="block w-full">Shop</a>
                 </li>
                 <li class="py-4 border-b border-gray-500 w-full text-center hover:bg-purple-600 hover:text-gray-200 transition">
-                    <a href="../public/blog.php" class="block w-full">Blog</a>
+                    <a href="./blog.php" class="block w-full">Blog</a>
                 </li>
                 <li class="py-4 w-full text-center hover:bg-purple-600 hover:text-gray-200 transition">
-                    <a href="../public/contact.php" class="block w-full">Contact</a>
+                    <a href="./contact.php" class="block w-full">Contact</a>
                 </li>
             </ul>
         </div>
@@ -319,8 +317,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
         </script>
-    <script src="../public/js/cart.js"></script>
-    <script src="../public/index.js" defer></script>
+    <script src="./cart.js"></script>
+    <script src="./index.js" defer></script>
 </body>
 </html>
 

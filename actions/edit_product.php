@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($_FILES['image']['size'] > 0) {
         // New image uploaded
         $imageName = basename($_FILES['image']['name']);
-        $imagePath = '../uploads/' . $imageName;
+        $imagePath = './uploads/' . $imageName;
         move_uploaded_file($_FILES['image']['tmp_name'], $imagePath);
     } else {
         // Keep the old image if no new image is uploaded

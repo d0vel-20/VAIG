@@ -2,8 +2,8 @@
 
 <?php 
   $pageTitle = "Blog Detail";
-  include '../includes/config.php';
-  include '../includes/header.php';
+  include './includes/config.php';
+  include './includes/header.php';
 
 ?>
 
@@ -64,7 +64,7 @@
   </section>
 
 
-  <?php include '../includes/footer.php'; ?>
+  <?php include './includes/footer.php'; ?>
 
   
     

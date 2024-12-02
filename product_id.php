@@ -1,5 +1,5 @@
 <?php 
-include '../includes/config.php'; // Include DB connection
+include './includes/config.php'; // Include DB connection
 
 // Check if an ID is passed
 if (isset($_GET['id'])) {
@@ -26,7 +26,7 @@ if (isset($_GET['id'])) {
     exit;
 }
 
-include '../includes/header.php';
+include './includes/header.php';
 ?>
 
 <!-- Product Details Page -->
@@ -36,7 +36,7 @@ include '../includes/header.php';
             
             <!-- Product Image -->
             <div class="p-4">
-                <img src="../uploads/<?= $product['image'] ?>" alt="<?= $product['name'] ?>" class="w-full h-auto rounded-md object-cover shadow-lg">
+                <img src="./uploads/<?= $product['image'] ?>" alt="<?= $product['name'] ?>" class="w-full h-auto rounded-md object-cover shadow-lg">
             </div>
 
             <!-- Product Details -->
@@ -120,4 +120,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </script>
 
-<?php include '../includes/footer.php'; ?>
+<?php include './includes/footer.php'; ?>

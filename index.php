@@ -1,8 +1,8 @@
 
 <?php 
   $pageTitle = "Home";
-  include '../includes/config.php';
-  include '../includes/header.php';
+  include './includes/config.php';
+  include './includes/header.php';
 
 
 
@@ -59,15 +59,15 @@
 <section class="py-10 px-4 md:px-12">
   <div class="flex items-center justify-between mb-6">
       <h2 class="text-[21px] md:text-2xl  kanit-regular ">Shop varieties of electronics</h2>
-      <a href="../public/product.php" class="text-purple-700 text-sm kanit-light">View more</a>
+      <a href="./product.php" class="text-purple-700 text-sm kanit-light">View more</a>
   </div>
 
     <div class="grid gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
       <!-- Product Card 1 -->
       <?php while ($product = $result->fetch_assoc()): ?>
-                    <a href="../public/product_id.php?id=<?= $product['id'] ?>" class="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <a href="./product_id.php?id=<?= $product['id'] ?>" class="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
                         <div class="relative">
-                            <img src="<?= '../uploads/' . $product['image'] ?>" alt="<?= $product['name'] ?>" class="w-full h-40 object-cover">
+                            <img src="<?= './uploads/' . $product['image'] ?>" alt="<?= $product['name'] ?>" class="w-full h-40 object-cover">
                         </div>
                         <div class="p-2">
                             <p class="text-gray-800 text-[12px] kanit-light"><?= $product['name'] ?></p>
@@ -103,7 +103,7 @@
 
       <!-- Category Card 3 -->
       <div class="relative">
-        <img src="../public/Media/home-cat.png" alt="Category 3" class="w-full h-40 object-cover rounded-md">
+        <img src="./Media/home-cat.png" alt="Category 3" class="w-full h-40 object-cover rounded-md">
         <div class="absolute inset-0 rounded-md bg-gradient-to-t from-black/60 to-transparent"></div>
         <p class="absolute bottom-2 left-2 text-white font-semibold text-sm">Home Entertainment</p>
       </div>
@@ -117,28 +117,28 @@
 
       <!-- Category Card 5 -->
       <div class="relative">
-        <img src="../public/Media/camera-cat.png" alt="Category 5" class="w-full h-40 object-cover rounded-md">
+        <img src="./Media/camera-cat.png" alt="Category 5" class="w-full h-40 object-cover rounded-md">
         <div class="absolute inset-0 rounded-md bg-gradient-to-t from-black/60 to-transparent"></div>
         <p class="absolute bottom-2 left-2 text-white font-semibold text-sm">Cameras & Photography</p>
       </div>
 
       <!-- Category Card 6 -->
       <div class="relative">
-        <img src="../public/Media/mobile-cat.jpg" alt="Category 6" class="w-full h-40 object-cover rounded-md">
+        <img src="./Media/mobile-cat.jpg" alt="Category 6" class="w-full h-40 object-cover rounded-md">
         <div class="absolute inset-0 rounded-md bg-gradient-to-t from-black/60 to-transparent"></div>
         <p class="absolute bottom-2 left-2 text-white font-semibold text-sm">Mobile Devices</p>
       </div>
 
       <!-- Category Card 7 -->
       <div class="relative">
-        <img src="../public/Media/kitchen-cat.jpg" alt="Category 7" class="w-full h-40 object-cover rounded-md">
+        <img src="./Media/kitchen-cat.jpg" alt="Category 7" class="w-full h-40 object-cover rounded-md">
         <div class="absolute inset-0 rounded-md bg-gradient-to-t from-black/60 to-transparent"></div>
         <p class="absolute bottom-2 left-2 text-white font-semibold text-sm">Kitchen Appliances</p>
       </div>
 
       <!-- Category Card 8 -->
       <div class="relative">
-        <img src="../public/Media/surveilliance-cat.jpeg" alt="Category 8" class="w-full h-40 object-cover rounded-md">
+        <img src="./Media/surveilliance-cat.jpeg" alt="Category 8" class="w-full h-40 object-cover rounded-md">
         <div class="absolute inset-0 rounded-md bg-gradient-to-t from-black/60 to-transparent"></div>
         <p class="absolute bottom-2 left-2 text-white font-semibold text-sm">Surveliance Cameras</p>
       </div>
@@ -161,7 +161,7 @@
       <!-- Shile Speakers -->
       <div class="flex justify-center items-center">
         <img 
-          src="../public/Media/shile.png" 
+          src="./Media/shile.png" 
           alt="Shile Speakers Logo" 
           class="h-50 w-50 object-contain"
         />
@@ -170,7 +170,7 @@
       <!-- Omni Products -->
       <div class="flex justify-center items-center">
         <img 
-          src="../public/Media/omni.jpg" 
+          src="./Media/omni.jpg" 
           alt="Omni Products Logo" 
           class="h-50 w-50 object-contain"
         />
@@ -256,7 +256,7 @@
 
             
 
-  <?php include '../includes/footer.php'; ?>
+  <?php include './includes/footer.php'; ?>
 
 
 

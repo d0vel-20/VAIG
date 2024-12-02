@@ -1,7 +1,7 @@
 <?php 
   $pageTitle = "Check Out";
-  include '../includes/config.php';
-  include '../includes/header.php';
+  include './includes/config.php';
+  include './includes/header.php';
 
 ?>
 
@@ -88,7 +88,7 @@
         // Add image, name, quantity, and price (no remove button or editable quantity)
         itemElement.innerHTML = `
             <div class="flex items-center">
-                <img src="../uploads/${item.image}" alt="${item.name}" class="w-12 h-12 object-cover mr-4"> <!-- Product image -->
+                <img src="./uploads/${item.image}" alt="${item.name}" class="w-12 h-12 object-cover mr-4"> <!-- Product image -->
                 <div>
                     <p class="kanit-regular">${item.name}</p>
                     <small class="text-gray-500 kanit-light">Quantity: ${item.quantity}</small>
@@ -158,4 +158,4 @@
 
 
 
-<?php include '../includes/footer.php'; ?>
+<?php include './includes/footer.php'; ?>

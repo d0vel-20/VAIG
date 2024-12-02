@@ -1,8 +1,8 @@
 
 <?php 
   $pageTitle = "Contact";
-  include '../includes/config.php';
-  include '../includes/header.php';
+  include './includes/config.php';
+  include './includes/header.php';
 
 ?>
 
@@ -55,7 +55,7 @@
   </div>
 
 
-  <?php include '../includes/footer.php'; ?>
+  <?php include './includes/footer.php'; ?>
 
 
 

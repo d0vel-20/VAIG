@@ -1,7 +1,7 @@
 <?php 
   $pageTitle = "About Us";
-  include '../includes/config.php';
-  include '../includes/header.php';
+  include './includes/config.php';
+  include './includes/header.php';
 
 ?>
 
@@ -59,7 +59,7 @@
   <!-- Image Placeholder -->
   <!-- Image -->
   <div class="relative">
-    <img src="../public/Media/g-2.jpg" alt="Queen Nefertiti" class="rounded-lg  w-full h-auto object-cover">
+    <img src="./Media/g-2.jpg" alt="Queen Nefertiti" class="rounded-lg  w-full h-auto object-cover">
     <div class="absolute top-0 left-0 w-full h-full bg-pink-300 opacity-25 rounded-lg"></div>
   </div>
 </div>
@@ -69,7 +69,7 @@
   <!-- Image Placeholder -->
   <!-- Image -->
   <div class="relative">
-    <img src="../public/Media/g-3.jpg" alt="Queen Nefertiti" class="rounded-lg  w-full h-auto object-cover">
+    <img src="./Media/g-3.jpg" alt="Queen Nefertiti" class="rounded-lg  w-full h-auto object-cover">
     <div class="absolute top-0 left-0 w-full h-full bg-pink-300 opacity-25 rounded-lg"></div>
   </div>
 
@@ -159,7 +159,7 @@ Engaging in strategic partnerships with influencers, thought leaders, and indust
             <video 
               class="w-full h-56 object-cover" 
               controls>
-              <source src="../public/Media/v-2.mp4" type="video/mp4">
+              <source src="./Media/v-2.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
@@ -174,7 +174,7 @@ Engaging in strategic partnerships with influencers, thought leaders, and indust
             <video 
               class="w-full h-56 object-cover" 
               controls>
-              <source src="../public/Media/v-1.mp4" type="video/mp4">
+              <source src="./Media/v-1.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
@@ -190,7 +190,7 @@ Engaging in strategic partnerships with influencers, thought leaders, and indust
               class="w-full h-56 object-cover" 
               style="object-position: center;" 
               controls>
-              <source src="../public/Media/v-3.mp4" type="video/mp4">
+              <source src="./Media/v-3.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
@@ -216,5 +216,5 @@ Engaging in strategic partnerships with influencers, thought leaders, and indust
 
 
 
-  <?php include '../includes/footer.php'; ?>
+  <?php include './includes/footer.php'; ?>
     

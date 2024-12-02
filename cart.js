@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
             productRow.innerHTML = `
                 <td class="py-4 px-6">
                     <div class="flex items-center">
-                        <img src="../uploads/${product.image}" alt="${product.name}" class="w-16 h-16 rounded-md mr-4 object-cover shadow-md">
+                        <img src="./uploads/${product.image}" alt="${product.name}" class="w-16 h-16 rounded-md mr-4 object-cover shadow-md">
                         <div class="flex flex-col">
                             <span class="kanit-light text-gray-700 text-sm">${product.name}</span>
                             <button class="text-red-500 hover:text-red-700 mt-1 text-sm flex items-center remove-item" data-id="${product.id}">
