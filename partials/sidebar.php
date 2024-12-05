@@ -49,6 +49,7 @@
             <nav class="flex-1 p-4 space-y-4">
                 <a href="../admin/products.php" class="block text-white hover:text-blue-400">Products</a>
                 <a href="#" class="block text-white hover:text-blue-400">Blogs</a>
+            
             </nav>
             <div class="p-4 border-t flex flex-col items-left justify-center gap-4 border-gray-700">
                 <a href="../admin/logout.php" class="block text-red-400 hover:text-red-600">Logout</a>

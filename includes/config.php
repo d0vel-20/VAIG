@@ -2,10 +2,10 @@
 
 
 // Database credentials
-$host = "localhost";
-$username = "root";  
-$password = "";      
-$dbname = "vision_africa_group";
+$host = "https://server212.web-hosting.com:2083";
+$username = "visiappv";  
+$password = "kDv2tqk2TtTY";      
+$dbname = "visiappv_vision_africa_group";
 
 // Connect to the database
 $conn = new mysqli($host, $username, $password, $dbname);

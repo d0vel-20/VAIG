@@ -23,17 +23,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Debug: Print the received brand value
     echo "Received brand: " . $brand . "<br>";
+    // return;
+
+    $sql = mysqli_query($conn, "UPDATE `products` SET `name`='$name',`description`='$description',`price`='$price',`category`='$category',`brand`='$brand',`image`='$imageName' WHERE id = $productId");
+    
 
     // Update product details
-    $stmt = $conn->prepare("UPDATE products SET name = ?, description = ?, price = ?, category = ?, brand = ?, image = ? WHERE id = ?");
-    $stmt->bind_param("ssdsdsi", $name, $description, $price, $category, $brand, $imageName, $productId);
-    $stmt->execute();
+    // $stmt = $conn->prepare("UPDATE products SET name = ?, description = ?, price = ?, category = ?, brand = ?, image = ? WHERE id = ?");
+    // $stmt->bind_param("ssdsdsi", $name, $description, $price, $category, $brand, $imageName, $productId);
+    // $stmt->execute();
 
     // Redirect after update
     header('Location: ../admin/products.php');
 }
-?>
-
-
-
-
